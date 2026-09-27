@@ -20,5 +20,5 @@ Estrutura inicial
 ## Roadmap
 
 - [x] Criar README
-- [ ] Criar estrutura HTML
-- [ ] Adicionar CSS
+- [x] Criar estrutura HTML
+- [x] Adicionar CSS
