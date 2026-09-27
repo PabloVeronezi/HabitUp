@@ -10,14 +10,20 @@
   <body>
     <header>
       <h1>HabitUp</h1>
+      <p>Organize seus hábitos</p>
     </header>
     <main>
       <section class="register">
         <h2>Cadastro de Hábito</h2>
         <form id="register-form">
           <label for="add-habit">Hábito</label>
-          <input type="text" id="add-habit" placeholder="O que faremos hoje?" />
-          <button type="submit">Registrar</button>
+          <input
+            type="text"
+            id="add-habit"
+            placeholder="O que faremos hoje?"
+            required
+          />
+          <button type="submit" id="send-habit">Registrar</button>
         </form>
       </section>
       <section class="habits">
