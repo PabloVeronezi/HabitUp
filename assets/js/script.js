@@ -19,8 +19,16 @@ form.addEventListener("submit", (event) => {
     habitName.charAt(0).toUpperCase() + habitName.slice(1).toLowerCase();
 
   const habitItem = document.createElement("li");
+  const habitText = document.createElement("span");
+  const removeButton = document.createElement("button");
 
-  habitItem.textContent = formattedHabitName;
+  habitText.textContent = formattedHabitName;
+
+  removeButton.type = "button";
+  removeButton.textContent = "Remover";
+
+  habitItem.appendChild(habitText);
+  habitItem.appendChild(removeButton);
 
   habitList.appendChild(habitItem);
 
@@ -37,7 +45,16 @@ habitAddInput.addEventListener("input", () => {
 });
 
 habitList.addEventListener("click", (event) => {
-  if (event.target.tagName === "LI") {
-    event.target.classList.toggle("completed");
+  const habitItem = event.target.closest("li");
+
+  if (!habitItem) {
+    return;
   }
+
+  if (event.target.tagName === "BUTTON") {
+    habitItem.remove();
+    return;
+  }
+
+  habitItem.classList.toggle("completed");
 });
