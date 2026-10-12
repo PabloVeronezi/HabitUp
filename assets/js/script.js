@@ -15,9 +15,12 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  const formattedHabitName =
+    habitName.charAt(0).toUpperCase() + habitName.slice(1).toLowerCase();
+
   const habitItem = document.createElement("li");
 
-  habitItem.textContent = habitName;
+  habitItem.textContent = formattedHabitName;
 
   habitList.appendChild(habitItem);
 
