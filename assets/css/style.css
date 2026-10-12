@@ -94,6 +94,16 @@ main h2 {
   outline: none;
 }
 
+.form-error {
+  margin: 6px 0 0;
+  color: #b42318;
+  font-size: 13px;
+}
+
+#add-habit.input-error {
+  border-color: #b42318;
+}
+
 #send-habit {
   background-color: var(--color-primary);
   color: var(--color-surface);
