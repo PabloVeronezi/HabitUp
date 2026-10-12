@@ -35,3 +35,9 @@ habitAddInput.addEventListener("input", () => {
   formError.hidden = true;
   habitAddInput.classList.remove("input-error");
 });
+
+habitList.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI") {
+    event.target.classList.toggle("completed");
+  }
+});
