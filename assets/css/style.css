@@ -156,21 +156,55 @@ main h2 {
   color: var(--color-text-secondary);
 }
 
-.habits li button {
+.habit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.habit-actions button {
+  width: 32px;
+  height: 32px;
   padding: 4px 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: transparent;
-  border: 1px solid #d8a3a0;
   border-radius: 6px;
 
   cursor: pointer;
 }
 
-.habits li button:hover {
+.habit-actions svg {
+  width: 16px;
+  height: 16px;
+}
+
+.edit-btn {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.edit-btn:hover {
+  background-color: #eef7ee;
+}
+
+.edit-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.remove-btn {
+  color: #b42318;
+  border: 1px solid #d8a3a0;
+}
+
+.remove-btn:hover {
   background-color: #fbeaea;
 }
 
-.habits li button:focus-visible {
+.remove-btn:focus-visible {
   outline: 2px solid #b42318;
   outline-offset: 2px;
 }
