@@ -16,7 +16,8 @@ Atualmente, a aplicação já permite:
 - validar hábitos vazios ou compostos apenas por espaços;
 - exibir feedback visual para entradas inválidas;
 - normalizar o texto dos hábitos cadastrados;
-- manter o foco no campo de entrada após o cadastro.
+- manter o foco no campo de entrada após o cadastro;
+- Permite cadastrar, editar, concluir/desconcluir e remover hábitos.
 
 ## Tecnologias
 
@@ -45,7 +46,7 @@ Atualmente, a aplicação já permite:
 - [x] Validar hábitos inválidos
 - [x] Adicionar feedback visual de erro
 - [x] Normalizar texto dos hábitos cadastrados
-- [ ] Marcar hábito como concluído
-- [ ] Remover hábito
-- [ ] Editar hábito
+- [x] Marcar hábito como concluído
+- [x] Remover hábito
+- [x] Editar hábito
 - [ ] Persistir hábitos com localStorage
